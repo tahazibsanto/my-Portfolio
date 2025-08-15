@@ -10,7 +10,7 @@ import type { Video } from '@/lib/types';
 const portfolioVideos: Video[] = [
   {
     id: 1,
-    title: 'Corporate Documentary',
+    title: 'Corporate Documentary | The Future of Tech',
     description: "A deep dive into the tech industry's future.",
     thumbnailUrl: 'https://img.youtube.com/vi/WhJ-vUIMFYI/hqdefault.jpg',
     youtubeUrl: 'https://www.youtube.com/embed/WhJ-vUIMFYI',
@@ -18,7 +18,7 @@ const portfolioVideos: Video[] = [
   },
   {
     id: 2,
-    title: 'Music Video',
+    title: "Rick Astley - Never Gonna Give You Up (Official Music Video)",
     description: 'Visuals for the latest hit single.',
     thumbnailUrl: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg',
     youtubeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -26,7 +26,7 @@ const portfolioVideos: Video[] = [
   },
   {
     id: 3,
-    title: 'The Wanderer',
+    title: 'The Wanderer - A Short Film',
     description: 'A short film about discovery and adventure.',
     thumbnailUrl: 'https://img.youtube.com/vi/6_pru8U2RmM/hqdefault.jpg',
     youtubeUrl: 'https://www.youtube.com/embed/6_pru8U2RmM',
@@ -34,7 +34,7 @@ const portfolioVideos: Video[] = [
   },
   {
     id: 4,
-    title: 'Product Launch',
+    title: 'Apple Vision Pro — Unveiling a New Era of Computing',
     description: 'Teaser for an exciting new product.',
     thumbnailUrl: 'https://img.youtube.com/vi/Fm2o1tGeobg/hqdefault.jpg',
     youtubeUrl: 'https://www.youtube.com/embed/Fm2o1tGeobg',
@@ -42,7 +42,7 @@ const portfolioVideos: Video[] = [
   },
   {
     id: 5,
-    title: 'Social Media Ad',
+    title: 'The Beauty of Social Media - A Short Film',
     description: 'Engaging content for online platforms.',
     thumbnailUrl: 'https://img.youtube.com/vi/t1_3_1W2I_A/hqdefault.jpg',
     youtubeUrl: 'https://www.youtube.com/embed/t1_3_1W2I_A',
@@ -50,7 +50,7 @@ const portfolioVideos: Video[] = [
   },
   {
     id: 6,
-    title: 'Wedding Highlights',
+    title: 'Our Wedding Video | A Cinematic Highlight Film',
     description: "Capturing the magic of a special day.",
     thumbnailUrl: 'https://img.youtube.com/vi/iuk77TjvKOA/hqdefault.jpg',
     youtubeUrl: 'https://www.youtube.com/embed/iuk77TjvKOA',
