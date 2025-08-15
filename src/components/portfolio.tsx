@@ -18,46 +18,6 @@ const portfolioVideos: Video[] = [
     aiHint: 'corporate office',
   },
   {
-    id: 'dQw4w9WgXcQ',
-    title: "Rick Astley - Never Gonna Give You Up (Official Music Video)",
-    description: 'Visuals for the latest hit single.',
-    thumbnailUrl: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg',
-    youtubeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    aiHint: 'concert lights',
-  },
-  {
-    id: '6_pru8U2RmM',
-    title: 'The Wanderer - A Short Film',
-    description: 'A short film about discovery and adventure.',
-    thumbnailUrl: 'https://img.youtube.com/vi/6_pru8U2RmM/hqdefault.jpg',
-    youtubeUrl: 'https://www.youtube.com/embed/6_pru8U2RmM',
-    aiHint: 'nature landscape',
-  },
-  {
-    id: 'Fm2o1tGeobg',
-    title: 'Apple Vision Pro — Unveiling a New Era of Computing',
-    description: 'Teaser for an exciting new product.',
-    thumbnailUrl: 'https://img.youtube.com/vi/Fm2o1tGeobg/hqdefault.jpg',
-    youtubeUrl: 'https://www.youtube.com/embed/Fm2o1tGeobg',
-    aiHint: 'modern product',
-  },
-  {
-    id: 't1_3_1W2I_A',
-    title: 'The Beauty of Social Media - A Short Film',
-    description: 'Engaging content for online platforms.',
-    thumbnailUrl: 'https://img.youtube.com/vi/t1_3_1W2I_A/hqdefault.jpg',
-    youtubeUrl: 'https://www.youtube.com/embed/t1_3_1W2I_A',
-    aiHint: 'city life',
-  },
-  {
-    id: 'iuk77TjvKOA',
-    title: 'Our Wedding Video | A Cinematic Highlight Film',
-    description: "Capturing the magic of a special day.",
-    thumbnailUrl: 'https://img.youtube.com/vi/iuk77TjvKOA/hqdefault.jpg',
-    youtubeUrl: 'https://www.youtube.com/embed/iuk77TjvKOA',
-    aiHint: 'wedding couple',
-  },
-  {
     id: 'LYaVYVtBrlA',
     title: 'Cinematic Travel Video',
     description: 'A cinematic travel video.',
@@ -163,10 +123,11 @@ export default function Portfolio() {
           A selection of my latest video editing projects. <a href="#" className="text-primary hover:underline">Watch All</a>
         </p>
       </div>
+      <div className="container">
       <Carousel setApi={setApi} className="w-full" opts={{align: "center", loop: true}}>
         <CarouselContent className="-ml-2">
            {portfolioVideos.map((video, index) => (
-            <CarouselItem key={video.id} className="md:basis-1/3 lg:basis-1/5 pl-2">
+            <CarouselItem key={video.id} className="basis-1/2 md:basis-1/3 lg:basis-1/5 pl-2">
                <div
                 onClick={() => openVideoPlayer(video)}
                 className="p-1"
@@ -197,9 +158,10 @@ export default function Portfolio() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="ml-24" />
-        <CarouselNext className="mr-24"/>
+        <CarouselPrevious className="-left-4 md:-left-8 lg:-left-12" />
+        <CarouselNext className="-right-4 md:-right-8 lg:-right-12"/>
       </Carousel>
+      </div>
 
       {selectedVideo && (
         <Dialog open={!!selectedVideo} onOpenChange={(isOpen) => !isOpen && closeVideoPlayer()}>
