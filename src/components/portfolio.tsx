@@ -12,7 +12,7 @@ const portfolioVideos: Video[] = [
     title: 'Corporate Documentary',
     description: "A deep dive into the tech industry's future.",
     thumbnailUrl: 'https://placehold.co/600x400.png',
-    youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    youtubeUrl: 'https://www.youtube.com/watch?v=WhJ-vUIMFYI&t=309s',
     aiHint: 'corporate office',
   },
   {
