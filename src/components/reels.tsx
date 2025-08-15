@@ -104,7 +104,7 @@ export default function Reels() {
         >
           <CarouselContent>
             {reelsVideos.map((video) => (
-              <CarouselItem key={video.id} className="md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={video.id} className="basis-1/2 md:basis-1/4 lg:basis-1/6">
                 <div className="p-1">
                   <div
                     onClick={() => openVideoPlayer(video)}
