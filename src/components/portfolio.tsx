@@ -116,8 +116,8 @@ export default function Portfolio() {
   };
 
   return (
-    <section id="portfolio" className="py-16 sm:py-24 animate-in fade-in-0 duration-1000 overflow-hidden">
-      <div className="container">
+    <section id="portfolio" className="w-full py-16 sm:py-24 animate-in fade-in-0 duration-1000 overflow-hidden">
+      <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">Our Latest Releases</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
@@ -127,7 +127,7 @@ export default function Portfolio() {
         <Carousel setApi={setApi} className="w-full" opts={{align: "center", loop: true}}>
           <CarouselContent className="-ml-2">
              {portfolioVideos.map((video, index) => (
-              <CarouselItem key={video.id} className="basis-1/2 md:basis-1/3 lg:basis-1/5 pl-2">
+              <CarouselItem key={video.id} className="basis-full md:basis-1/3 lg:basis-1/5 pl-2">
                  <div
                   onClick={() => openVideoPlayer(video)}
                   className="p-1"

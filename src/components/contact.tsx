@@ -165,8 +165,8 @@ function SubscriptionForm() {
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 sm:py-24 animate-in fade-in-0 duration-1000">
-      <div className="container">
+    <section id="contact" className="w-full py-16 sm:py-24 animate-in fade-in-0 duration-1000">
+      <div className="container mx-auto">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8">
           <ContactForm />
           <SubscriptionForm />

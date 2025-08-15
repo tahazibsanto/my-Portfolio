@@ -3,17 +3,19 @@ import Hero from "@/components/hero";
 import Portfolio from "@/components/portfolio";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import AIStudio from "@/components/ai-studio";
 
 export default function Home() {
   return (
-    <div className="flex min-h-dvh flex-col bg-background">
+    <>
       <Header />
-      <main className="flex-1">
+      <main>
         <Hero />
         <Portfolio />
+        <AIStudio />
         <Contact />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

@@ -11,7 +11,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { handleGenerateHighlightReel, handleGetStyleSuggestions } from '@/app/actions';
+import { generateHighlightReel, getStyleSuggestions } from '@/ai/flows';
 import type { GenerateHighlightReelOutput, StyleSuggestionsOutput } from '@/lib/types';
 import { useToast } from '@/hooks/use-toast';
 
@@ -52,11 +52,11 @@ export default function AIStudio() {
 
     function onSubmit(values: z.infer<typeof highlightReelSchema>) {
       startTransition(async () => {
-        const res = await handleGenerateHighlightReel(values);
-        if (res.error) {
-           toast({ title: "Error", description: res.error, variant: 'destructive' });
-        } else {
+        try {
+          const res = await generateHighlightReel(values);
           setResult(res);
+        } catch (e: any) {
+           toast({ title: "Error", description: e.message || 'Something went wrong.', variant: 'destructive' });
         }
       });
     }
@@ -156,11 +156,11 @@ export default function AIStudio() {
 
     function onSubmit(values: z.infer<typeof styleAssistSchema>) {
       startTransition(async () => {
-        const res = await handleGetStyleSuggestions(values);
-        if (res.error) {
-           toast({ title: "Error", description: res.error, variant: 'destructive' });
-        } else {
+        try {
+          const res = await getStyleSuggestions(values);
           setResult(res);
+        } catch (e: any) {
+          toast({ title: "Error", description: e.message || 'Something went wrong.', variant: 'destructive' });
         }
       });
     }
@@ -235,8 +235,8 @@ export default function AIStudio() {
 
 
   return (
-    <section id="ai-studio" className="py-16 sm:py-24 bg-card animate-in fade-in-0 duration-1000">
-      <div className="container">
+    <section id="ai-studio" className="w-full py-16 sm:py-24 bg-card animate-in fade-in-0 duration-1000">
+      <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">AI Studio</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
