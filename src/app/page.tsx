@@ -1,3 +1,21 @@
+import Header from "@/components/header";
+import Hero from "@/components/hero";
+import Portfolio from "@/components/portfolio";
+import AIStudio from "@/components/ai-studio";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
+
 export default function Home() {
-  return <></>;
+  return (
+    <div className="flex min-h-dvh flex-col bg-background">
+      <Header />
+      <main className="flex-1">
+        <Hero />
+        <Portfolio />
+        <AIStudio />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
 }
