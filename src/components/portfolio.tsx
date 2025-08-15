@@ -9,7 +9,7 @@ import type { Video } from '@/lib/types';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/carousel";
 
 const portfolioVideos: Video[] = [
-  {
+    {
     id: 'WhJ-vUIMFYI',
     title: 'Corporate Documentary | The Future of Tech',
     description: "A deep dive into the tech industry's future.",

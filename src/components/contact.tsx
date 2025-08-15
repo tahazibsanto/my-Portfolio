@@ -151,7 +151,7 @@ function SubscriptionForm() {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full" variant="outline" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}}>
+            <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
               <Mail className="mr-2 h-4 w-4" />
               Subscribe
             </Button>
