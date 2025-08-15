@@ -117,18 +117,16 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="py-16 sm:py-24 animate-in fade-in-0 duration-1000 overflow-hidden">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">Our Latest Releases</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            A selection of my latest video editing projects. <a href="#" className="text-primary hover:underline">Watch All</a>
-          </p>
-        </div>
+      <div className="container text-center mb-12">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">Our Latest Releases</h2>
+        <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+          A selection of my latest video editing projects. <a href="#" className="text-primary hover:underline">Watch All</a>
+        </p>
       </div>
       <Carousel setApi={setApi} className="w-full" opts={{align: "center", loop: true}}>
         <CarouselContent>
            {portfolioVideos.map((video, index) => (
-            <CarouselItem key={video.id} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={video.id} className="md:basis-1/3 lg:basis-1/5">
                <div
                 onClick={() => openVideoPlayer(video)}
                 className="p-1"
@@ -143,7 +141,8 @@ export default function Portfolio() {
                       <Image
                         src={video.thumbnailUrl}
                         alt={video.title}
-                        fill
+                        width={480}
+                        height={270}
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
                         data-ai-hint={video.aiHint}
                       />
