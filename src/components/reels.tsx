@@ -57,6 +57,38 @@ const reelsVideos: Video[] = [
     youtubeUrl: 'https://www.youtube.com/embed/QUBZ0SlD9oU',
     aiHint: 'desert travel',
   },
+  {
+    id: 'shorts/qsmbLJcfrfs',
+    title: 'City Vibes Reel',
+    description: 'A dynamic reel showcasing the energy of city life.',
+    thumbnailUrl: 'https://img.youtube.com/vi/qsmbLJcfrfs/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/qsmbLJcfrfs',
+    aiHint: 'city life',
+  },
+  {
+    id: 'shorts/RGkdZV-8vBw',
+    title: 'Nature Escape Reel',
+    description: 'A tranquil reel capturing the beauty of nature.',
+    thumbnailUrl: 'https://img.youtube.com/vi/RGkdZV-8vBw/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/RGkdZV-8vBw',
+    aiHint: 'nature reel',
+  },
+  {
+    id: 'shorts/m-lThZ7cok0',
+    title: 'Urban Exploration Reel',
+    description: 'Exploring the hidden corners of the urban landscape.',
+    thumbnailUrl: 'https://img.youtube.com/vi/m-lThZ7cok0/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/m-lThZ7cok0',
+    aiHint: 'urban exploration',
+  },
+  {
+    id: 'shorts/66FLSBRkOIg',
+    title: 'Abstract Moments Reel',
+    description: 'A creative reel playing with abstract visuals and motion.',
+    thumbnailUrl: 'https://img.youtube.com/vi/66FLSBRkOIg/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/66FLSBRkOIg',
+    aiHint: 'abstract motion',
+  },
 ];
 
 export default function Reels() {
