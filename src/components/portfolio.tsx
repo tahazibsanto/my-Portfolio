@@ -49,6 +49,38 @@ const portfolioVideos: Video[] = [
     youtubeUrl: 'https://www.youtube.com/embed/GVkjiC2seJA',
     aiHint: 'cinematic travel',
   },
+  {
+    id: 'dpPbHISVOmY',
+    title: 'Event Aftermovie',
+    description: 'High-energy aftermovie capturing the excitement of a live event. Focuses on dynamic shots and rhythmic editing.',
+    thumbnailUrl: 'https://img.youtube.com/vi/dpPbHISVOmY/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/dpPbHISVOmY',
+    aiHint: 'concert crowd',
+  },
+  {
+    id: 'gnWxnusmPuY',
+    title: 'Product Demo',
+    description: 'Clean and informative product demonstration video. Highlights key features with clear visuals and motion graphics.',
+    thumbnailUrl: 'https://img.youtube.com/vi/gnWxnusmPuY/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/gnWxnusmPuY',
+    aiHint: 'tech product',
+  },
+  {
+    id: 'w2Gd08E7Ch0',
+    title: 'Music Video',
+    description: 'Creative and artistic music video with a unique visual concept. Perfectly synced with the music to create a compelling story.',
+    thumbnailUrl: 'https://img.youtube.com/vi/w2Gd08E7Ch0/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/w2Gd08E7Ch0',
+    aiHint: 'music performance',
+  },
+  {
+    id: 'ltftA-IF3uA',
+    title: 'Social Media Ad',
+    description: 'Short, snappy, and engaging ad optimized for social media platforms. Designed to stop the scroll and drive engagement.',
+    thumbnailUrl: 'https://img.youtube.com/vi/ltftA-IF3uA/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/ltftA-IF3uA',
+    aiHint: 'social media',
+  },
 ];
 
 export default function Portfolio() {
