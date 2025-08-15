@@ -10,46 +10,6 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const reelsVideos: Video[] = [
   {
-    id: 'shorts/gJg92I71-Xk',
-    title: 'Dynamic Product Reel',
-    description: 'A punchy and fast-paced reel for a new sneaker release.',
-    thumbnailUrl: 'https://img.youtube.com/vi/gJg92I71-Xk/hqdefault.jpg',
-    youtubeUrl: 'https://www.youtube.com/embed/gJg92I71-Xk',
-    aiHint: 'product reel',
-  },
-  {
-    id: 'shorts/b2w21-a_Xg4',
-    title: 'Travel Moments Reel',
-    description: 'A collection of stunning vertical shots from a trip to the mountains.',
-    thumbnailUrl: 'https://img.youtube.com/vi/b2w21-a_Xg4/hqdefault.jpg',
-    youtubeUrl: 'https://www.youtube.com/embed/b2w21-a_Xg4',
-    aiHint: 'travel reel',
-  },
-  {
-    id: 'shorts/V-x41bT-30Y',
-    title: 'Behind the Scenes Reel',
-    description: 'A fun look at the making of a recent commercial project.',
-    thumbnailUrl: 'https://img.youtube.com/vi/V-x41bT-30Y/hqdefault.jpg',
-    youtubeUrl: 'https://www.youtube.com/embed/V-x41bT-30Y',
-    aiHint: 'behind the scenes',
-  },
-  {
-    id: 'shorts/p2GLdIurCZo',
-    title: 'Food Reel',
-    description: 'Mouth-watering shots of a new menu at a local restaurant.',
-    thumbnailUrl: 'https://img.youtube.com/vi/p2GLdIurCZo/hqdefault.jpg',
-    youtubeUrl: 'https://www.youtube.com/embed/p2GLdIurCZo',
-    aiHint: 'food video',
-  },
-    {
-    id: 'shorts/eOUx30i0I_k',
-    title: 'Event Highlights Reel',
-    description: 'Capturing the energy and excitement of a corporate event.',
-    thumbnailUrl: 'https://img.youtube.com/vi/eOUx30i0I_k/hqdefault.jpg',
-    youtubeUrl: 'https://www.youtube.com/embed/eOUx30i0I_k',
-    aiHint: 'event highlights',
-  },
-  {
     id: 'shorts/QUBZ0SlD9oU',
     title: 'Cinematic Desert Journey',
     description: 'A breathtaking cinematic reel capturing a journey through vast desert landscapes.',
@@ -175,7 +135,6 @@ export default function Reels() {
         <Dialog open={!!selectedVideo} onOpenChange={(isOpen) => !isOpen && closeVideoPlayer()}>
           <DialogContent className="max-w-md p-0 bg-background border-none">
             <DialogHeader className="p-4 pb-0">
-              <DialogTitle>{selectedVideo.title}</DialogTitle>
             </DialogHeader>
             <div className="aspect-[9/16]">
               <iframe
