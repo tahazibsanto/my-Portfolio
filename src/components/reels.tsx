@@ -49,6 +49,14 @@ const reelsVideos: Video[] = [
     youtubeUrl: 'https://www.youtube.com/embed/eOUx30i0I_k',
     aiHint: 'event highlights',
   },
+  {
+    id: 'shorts/QUBZ0SlD9oU',
+    title: 'Cinematic Desert Journey',
+    description: 'A breathtaking cinematic reel capturing a journey through vast desert landscapes.',
+    thumbnailUrl: 'https://img.youtube.com/vi/QUBZ0SlD9oU/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/QUBZ0SlD9oU',
+    aiHint: 'desert travel',
+  },
 ];
 
 export default function Reels() {
@@ -132,4 +140,3 @@ export default function Reels() {
     </section>
   );
 }
-
