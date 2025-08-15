@@ -1,15 +1,14 @@
 "use client";
 
-import { Film, Menu, X } from "lucide-react";
+import { Film, Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navLinks = [
-  { href: "#portfolio", label: "Portfolio" },
-  { href: "#ai-studio", label: "AI Studio" },
-  { href: "#contact", label: "Contact" },
+  { href: "#portfolio", label: "Work" },
+  { href: "#contact", label: "About" },
 ];
 
 export default function Header() {
@@ -18,10 +17,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
-        <div className="mr-4 flex items-center">
+        <div className="mr-auto flex items-center">
           <Link href="/" className="flex items-center gap-2">
-            <Film className="h-6 w-6 text-primary" />
-            <span className="font-bold">Tahazib Santo</span>
+            <span className="font-bold text-lg">TAHAZIB SANTO</span>
           </Link>
         </div>
 
@@ -35,6 +33,9 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+           <Button asChild>
+            <Link href="#contact">Contact</Link>
+          </Button>
         </nav>
 
         <div className="flex flex-1 items-center justify-end gap-2 md:hidden">
@@ -48,7 +49,6 @@ export default function Header() {
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
-                  <Film className="h-6 w-6 text-primary" />
                   <span className="font-bold">Tahazib Santo</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
@@ -62,6 +62,9 @@ export default function Header() {
                       {link.label}
                     </Link>
                   ))}
+                   <Button asChild onClick={() => setIsMenuOpen(false)}>
+                      <Link href="#contact">Contact</Link>
+                   </Button>
                 </nav>
               </div>
             </SheetContent>
