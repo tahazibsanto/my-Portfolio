@@ -2,12 +2,13 @@ import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Portfolio from "@/components/portfolio";
 import Contact from "@/components/contact";
-import Footer from "@/components/footer";
 import AIStudio from "@/components/ai-studio";
+import SocialLinks from "@/components/social-links";
 
 export default function Home() {
   return (
     <>
+      <SocialLinks />
       <Header />
       <main>
         <Hero />
@@ -15,7 +16,6 @@ export default function Home() {
         <AIStudio />
         <Contact />
       </main>
-      <Footer />
     </>
   );
 }

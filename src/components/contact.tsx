@@ -56,12 +56,12 @@ function ContactForm() {
   }
 
   return (
-    <Card className="flex-1">
-      <CardHeader>
-        <CardTitle>Let's Create Together</CardTitle>
-        <CardDescription>Have a project in mind? Fill out the form and we'll be in touch.</CardDescription>
+    <Card className="flex-1 bg-transparent border-none shadow-none">
+      <CardHeader className="p-0">
+        <CardTitle className="text-3xl font-medium">Let's Create Together</CardTitle>
+        <CardDescription className="pt-2">Have a project in mind? Fill out the form and we'll be in touch.</CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="p-0 pt-6">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
             <FormField
@@ -103,7 +103,7 @@ function ContactForm() {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full" disabled={isPending}>
+            <Button type="submit" variant="outline" className="w-full" disabled={isPending}>
               {isPending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Send className="mr-2 h-4 w-4" />}
               Send Message
             </Button>
@@ -130,10 +130,10 @@ function SubscriptionForm() {
   }
 
   return (
-    <Card className="flex-1 bg-accent/20 border-accent/50">
+    <Card className="flex-1 bg-accent/30 border-none shadow-none">
       <CardHeader>
-        <CardTitle>Stay Inspired</CardTitle>
-        <CardDescription>Subscribe to our newsletter for the latest in video trends and our new releases.</CardDescription>
+        <CardTitle className="text-3xl font-medium">Stay Inspired</CardTitle>
+        <CardDescription className="pt-2">Subscribe to our newsletter for the latest in video trends and our new releases.</CardDescription>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -151,7 +151,7 @@ function SubscriptionForm() {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button type="submit" variant="outline" className="w-full bg-transparent hover:bg-foreground hover:text-background">
               <Mail className="mr-2 h-4 w-4" />
               Subscribe
             </Button>
@@ -167,7 +167,7 @@ export default function Contact() {
   return (
     <section id="contact" className="w-full py-16 sm:py-24 animate-in fade-in-0 duration-1000">
       <div className="container mx-auto">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 md:gap-16">
           <ContactForm />
           <SubscriptionForm />
         </div>
