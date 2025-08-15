@@ -89,6 +89,30 @@ const reelsVideos: Video[] = [
     youtubeUrl: 'https://www.youtube.com/embed/66FLSBRkOIg',
     aiHint: 'abstract motion',
   },
+  {
+    id: 'shorts/qaUi7t6t4Ko',
+    title: 'Exploring Ancient Streets',
+    description: 'A cinematic journey through ancient city streets.',
+    thumbnailUrl: 'https://img.youtube.com/vi/qaUi7t6t4Ko/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/qaUi7t6t4Ko',
+    aiHint: 'city travel',
+  },
+  {
+    id: 'shorts/rgsostgZ2O0',
+    title: 'Luxury Car Reel',
+    description: 'A showcase of a luxury car with dynamic shots.',
+    thumbnailUrl: 'https://img.youtube.com/vi/rgsostgZ2O0/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/rgsostgZ2O0',
+    aiHint: 'car reel',
+  },
+  {
+    id: 'shorts/E3Bf8_w7-iQ',
+    title: 'Winter Walk',
+    description: 'A peaceful walk through a snowy landscape.',
+    thumbnailUrl: 'https://img.youtube.com/vi/E3Bf8_w7-iQ/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/E3Bf8_w7-iQ',
+    aiHint: 'winter landscape',
+  },
 ];
 
 export default function Reels() {
@@ -124,7 +148,7 @@ export default function Reels() {
                 <div className="p-1">
                   <div
                     onClick={() => openVideoPlayer(video)}
-                    className="group relative aspect-[9/16] cursor-pointer rounded-lg overflow-hidden"
+                    className="group relative aspect-[9/16] cursor-pointer rounded-lg overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-2xl"
                   >
                     <Image
                       src={video.thumbnailUrl}
@@ -136,9 +160,6 @@ export default function Reels() {
                     />
                     <div className="absolute inset-0 bg-black/30 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
                       <PlayCircle className="h-20 w-20 text-white/80" />
-                    </div>
-                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent">
-                      <h3 className="text-lg font-bold text-white">{video.title}</h3>
                     </div>
                   </div>
                 </div>
