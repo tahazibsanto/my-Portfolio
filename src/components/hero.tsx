@@ -12,10 +12,10 @@ export default function Hero() {
       />
       <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl font-headline">
-          Crafting Visual Narratives
+          Tahazib Santo: Video Editor
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-          From raw footage to compelling stories, we blend artistry with technology to create videos that captivate and inspire.
+          From raw footage to compelling stories, I blend artistry with technology to create videos that captivate and inspire.
         </p>
         <div className="mt-10">
           <Button asChild size="lg">

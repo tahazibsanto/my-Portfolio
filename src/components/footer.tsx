@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
            <Film className="h-5 w-5 text-primary" />
-           <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} ReelStory. All rights reserved.</p>
+           <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Tahazib Santo. All rights reserved.</p>
         </div>
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="icon" asChild>

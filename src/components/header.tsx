@@ -21,7 +21,7 @@ export default function Header() {
         <div className="mr-4 flex items-center">
           <Link href="/" className="flex items-center gap-2">
             <Film className="h-6 w-6 text-primary" />
-            <span className="font-bold">ReelStory</span>
+            <span className="font-bold">Tahazib Santo</span>
           </Link>
         </div>
 
@@ -49,7 +49,7 @@ export default function Header() {
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
                   <Film className="h-6 w-6 text-primary" />
-                  <span className="font-bold">ReelStory</span>
+                  <span className="font-bold">Tahazib Santo</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (

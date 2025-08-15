@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "ReelStory - Crafting Visual Narratives",
-  description: "Professional video editing services and AI-powered tools to bring your story to life.",
+  title: "Tahazib Santo - Professional Video Editor",
+  description: "The portfolio of Tahazib Santo, a professional video editor creating compelling visual narratives.",
 };
 
 export default function RootLayout({
