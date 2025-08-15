@@ -81,6 +81,14 @@ const portfolioVideos: Video[] = [
     youtubeUrl: 'https://www.youtube.com/embed/ltftA-IF3uA',
     aiHint: 'social media',
   },
+  {
+    id: '_Fo95z964gU',
+    title: 'Cinematic Japan Travel',
+    description: 'A journey through the vibrant streets and serene landscapes of Japan, captured with a cinematic touch.',
+    thumbnailUrl: 'https://img.youtube.com/vi/_Fo95z964gU/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/embed/_Fo95z964gU',
+    aiHint: 'japan travel',
+  },
 ];
 
 export default function Portfolio() {
