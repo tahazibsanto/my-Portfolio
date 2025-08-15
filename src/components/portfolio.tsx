@@ -94,14 +94,10 @@ export default function Portfolio() {
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                     data-ai-hint={video.aiHint}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <PlayCircle className="h-16 w-16 text-white/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-xl mb-2">{video.title}</h3>
-                  <p className="text-muted-foreground mb-4 h-10">{video.description}</p>
                 </div>
               </CardContent>
             </Card>
