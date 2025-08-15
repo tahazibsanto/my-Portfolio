@@ -38,7 +38,7 @@ export default function Header() {
           </Button>
         </nav>
 
-        <div className="flex flex-1 items-center justify-end gap-2 md:hidden">
+        <div className="flex items-center justify-end gap-2 md:hidden">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">

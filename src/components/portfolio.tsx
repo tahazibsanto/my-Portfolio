@@ -158,8 +158,8 @@ export default function Portfolio() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="-left-4 md:-left-8 lg:-left-12" />
-          <CarouselNext className="-right-4 md:-right-8 lg:-right-12"/>
+          <CarouselPrevious className="left-0 md:-left-8" />
+          <CarouselNext className="right-0 md:-right-8"/>
         </Carousel>
       </div>
 
