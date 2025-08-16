@@ -20,10 +20,16 @@ export default function Bio() {
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">BIO</h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I'm a great place for you to tell a story and let your users know a little more about you.
+                I’m Tahazib Santo, a video editor passionate about turning stories into visuals that connect with people. With experience in documentary-style editing, YouTube content creation, and cinematic storytelling, I focus on making videos that feel real, engaging, and thought-provoking.
               </p>
               <p>
-                This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors.
+                Over the years, I’ve worked on projects ranging from geopolitics and history documentaries to creative YouTube content, always aiming to keep viewers hooked with clean visuals, smooth pacing, and a sense of curiosity. My style is minimal, story-driven, and always adapted to the needs of the project.
+              </p>
+              <p>
+                What drives me is the belief that a well-edited video isn’t just about cuts and effects—it’s about emotion, flow, and making sure the audience feels something.
+              </p>
+              <p>
+                Now, I’m looking to collaborate with creators, brands, and channels who want their ideas transformed into powerful visuals.
               </p>
             </div>
           </div>
