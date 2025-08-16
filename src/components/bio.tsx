@@ -8,12 +8,12 @@ export default function Bio() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative w-full h-[500px] rounded-lg overflow-hidden">
             <Image
-              src="https://placehold.co/600x800.png"
+              src="https://i.postimg.cc/Vkwz56BG/Picsart-23-07-02-01-42-45-750-1.png"
               alt="Bio image"
               width={600}
               height={800}
               className="object-cover w-full h-full"
-              data-ai-hint="portrait woman"
+              data-ai-hint="portrait man"
             />
           </div>
           <div className="space-y-6">
