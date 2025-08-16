@@ -33,7 +33,7 @@ export default function Hero() {
           <div className="mt-8 mb-12 transform -rotate-3 transition-transform duration-300 hover:rotate-0 hover:scale-105">
             <div className="relative w-[300px] h-[400px] md:w-[350px] md:h-[466px]">
               <Image
-                src="https://placehold.co/600x800.png"
+                src="https://i.postimg.cc/fRqRVsH6/a216b64796314d96a158bbbc133b3d33-1ww-1.jpg"
                 alt="Tahazib Santo"
                 width={600}
                 height={800}
