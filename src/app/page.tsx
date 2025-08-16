@@ -13,9 +13,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Bio />
         <Portfolio />
         <Reels />
-        <Bio />
         <Contact />
       </main>
     </>

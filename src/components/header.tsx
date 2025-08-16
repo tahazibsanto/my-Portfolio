@@ -9,9 +9,9 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ThemeToggle } from "./theme-toggle";
 
 const navLinks = [
+  { href: "#bio", label: "Bio" },
   { href: "#portfolio", label: "Work" },
   { href: "#reels", label: "Reels" },
-  { href: "#bio", label: "Bio" },
   { href: "#contact", label: "Contact" },
 ];
 
