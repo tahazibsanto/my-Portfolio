@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -112,14 +113,10 @@ export default function Portfolio() {
         </div>
 
         {/* Featured Video Section */}
-        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <div className="order-2 md:order-1 p-8 bg-accent/30 rounded-lg">
-                <h3 className="text-2xl font-bold mb-2">{featuredVideo.title}</h3>
-                <p className="text-muted-foreground text-lg">{featuredVideo.description}</p>
-            </div>
+        <div className="flex justify-center items-center">
             <div
               onClick={() => openVideoPlayer(featuredVideo)}
-              className="group relative aspect-video cursor-pointer order-1 md:order-2 rounded-lg overflow-hidden"
+              className="group relative aspect-video cursor-pointer rounded-lg overflow-hidden w-full max-w-4xl"
             >
                 <Image
                     src={featuredVideo.thumbnailUrl}
