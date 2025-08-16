@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -6,7 +7,7 @@ import { Moon, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function ThemeToggle() {
-  const [theme, setThemeState] = React.useState<"theme-light" | "dark" | "system">("system")
+  const [theme, setThemeState] = React.useState<"theme-light" | "dark">("dark")
 
   React.useEffect(() => {
     const isDarkMode = document.documentElement.classList.contains("dark")
@@ -14,11 +15,7 @@ export function ThemeToggle() {
   }, [])
 
   React.useEffect(() => {
-    const isDark =
-      theme === "dark" ||
-      (theme === "system" &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    document.documentElement.classList[isDark ? "add" : "remove"]("dark")
+    document.documentElement.classList[theme === 'dark' ? "add" : "remove"]("dark")
   }, [theme])
 
   const toggleTheme = () => {
