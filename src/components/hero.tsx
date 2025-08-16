@@ -38,6 +38,7 @@ export default function Hero() {
                 width={600}
                 height={800}
                 className="rounded-lg object-cover w-full h-full border-4 border-card shadow-2xl"
+                style={{ objectPosition: 'calc(50% + 10px) 50%' }}
                 data-ai-hint="portrait man"
               />
             </div>
