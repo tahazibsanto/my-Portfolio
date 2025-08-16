@@ -1,10 +1,10 @@
-import Header from "@/components/header";
-import Hero from "@/components/hero";
-import Portfolio from "@/components/portfolio";
-import Reels from "@/components/reels";
-import Contact from "@/components/contact";
-import SocialLinks from "@/components/social-links";
-import Bio from "@/components/bio";
+import Bio from '@/components/bio';
+import Contact from '@/components/contact';
+import Header from '@/components/header';
+import Hero from '@/components/hero';
+import Portfolio from '@/components/portfolio';
+import Reels from '@/components/reels';
+import SocialLinks from '@/components/social-links';
 
 export default function Home() {
   return (
