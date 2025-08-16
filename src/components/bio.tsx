@@ -1,8 +1,9 @@
+
 import Image from 'next/image';
 
 export default function Bio() {
   return (
-    <section id="bio" className="w-full py-16 sm:py-24 bg-background">
+    <section id="bio" className="w-full py-16 sm:py-24 bg-secondary">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative w-full h-[500px] rounded-lg overflow-hidden">
