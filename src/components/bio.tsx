@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Bio() {
   return (
-    <section id="bio" className="w-full py-16 sm:py-24 bg-secondary">
+    <section id="bio" className="w-full py-16 sm:py-24 bg-accent">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative w-full h-[500px] rounded-lg overflow-hidden">
@@ -18,7 +18,7 @@ export default function Bio() {
           </div>
           <div className="space-y-6">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">BIO</h2>
-            <div className="space-y-4 text-muted-foreground">
+            <div className="space-y-4 text-accent-foreground/80">
               <p>
                 I’m Tahazib Santo, a video editor passionate about turning stories into visuals that connect with people. With experience in documentary-style editing, YouTube content creation, and cinematic storytelling, I focus on making videos that feel real, engaging, and thought-provoking.
               </p>
