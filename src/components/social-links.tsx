@@ -1,12 +1,13 @@
+
 import Link from 'next/link';
-import { Github, Twitter, Linkedin, Instagram, Youtube, Facebook, Rss } from 'lucide-react';
+import { Github, Twitter, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const socialLinks = [
-  { href: "https://youtube.com", icon: Youtube, label: "YouTube" },
-  { href: "https://facebook.com", icon: Facebook, label: "Facebook" },
-  { href: "https://twitter.com", icon: Twitter, label: "Twitter" },
-  { href: "https://instagram.com", icon: Instagram, label: "Instagram" },
+  { href: "#", icon: Facebook, label: "Facebook" },
+  { href: "#", icon: Linkedin, label: "LinkedIn" },
+  { href: "#", icon: Instagram, label: "Instagram" },
+  { href: "#", icon: Twitter, label: "Twitter" },
   { href: "https://github.com", icon: Github, label: "GitHub" },
 ]
 
