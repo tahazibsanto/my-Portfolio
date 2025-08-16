@@ -24,7 +24,7 @@ export default function Header() {
           <span className="font-bold text-lg tracking-wider">TAHAZIB SANTO</span>
         </Link>
 
-        <div className="flex items-center gap-4" style={{ marginRight: '60px' }}>
+        <div className="flex items-center gap-4" style={{ paddingRight: '100px' }}>
           <nav className="hidden items-center gap-8 text-sm md:flex">
             {navLinks.map((link) => (
               <Link
