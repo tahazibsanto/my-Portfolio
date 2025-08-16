@@ -28,7 +28,7 @@ export default function Hero() {
               Professional Video Editor
             </p>
             <p className="mt-2 text-md tracking-widest text-muted-foreground sm:text-lg">
-              Specialize in documentary video editor
+              Specializing in documentary video editing
             </p>
             <Bracket position="bl" />
             <Bracket position="br" />
