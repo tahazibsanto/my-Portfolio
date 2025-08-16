@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <SocialLinks />
       <Header />
-      <main>
+      <main className="container mx-auto px-4">
         <Hero />
         <Bio />
         <Portfolio />

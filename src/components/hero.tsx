@@ -16,7 +16,7 @@ const Bracket = ({ position }: { position: 'tl' | 'tr' | 'bl' | 'br' }) => {
 export default function Hero() {
   return (
     <section className="w-full">
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <div className="flex h-auto min-h-[500px] flex-col items-center justify-center text-center py-16 md:py-24">
           <div className="group relative inline-block p-12">
             <Bracket position="tl" />

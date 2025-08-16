@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Bio() {
   return (
     <section id="bio" className="w-full py-16 sm:py-24 bg-accent">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative w-full h-[500px] rounded-lg overflow-hidden">
             <Image
@@ -26,7 +26,7 @@ export default function Bio() {
                 Over the years, I’ve worked on projects ranging from geopolitics and history documentaries to creative YouTube content, always aiming to keep viewers hooked with clean visuals, smooth pacing, and a sense of curiosity. My style is minimal, story-driven, and always adapted to the needs of the project.
               </p>
               <p>
-                What drives me is the belief that a well-edited video isn’t just about cuts and effects—it’s about emotion, flow, and making sure the audience feels something.
+                What drives me is the belief that a well-edited video isn’t just about cuts and effects—it’s about emotion, a flow, and making sure the audience feels something.
               </p>
               <p>
                 Now, I’m looking to collaborate with creators, brands, and channels who want their ideas transformed into powerful visuals.

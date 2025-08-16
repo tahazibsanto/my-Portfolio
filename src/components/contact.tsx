@@ -114,7 +114,7 @@ function ContactForm() {
 export default function Contact() {
   return (
     <section id="contact" className="w-full py-16 sm:py-24 animate-in fade-in-0 duration-1000">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <div className="max-w-lg mx-auto">
           <ContactForm />
         </div>
